@@ -1,0 +1,48 @@
+{
+    "name": "abriand-snt",
+    "displayName": "abriand-snt",
+    "description": "Pack d'extensions pour l'enseignement de SNT.",
+    "version": "0.0.1",
+    "author": {
+		"name": "Frank SAURET"
+	},
+    "publisher": "electropol-fr",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/frank4466/abriand-snt"
+	},
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "icon": "image/LogoAbriandSNT.png",
+    "keywords": [
+		"python",
+		"french",
+        "html",
+        "css",
+        "microbit",
+        "snt"
+	],
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionPack": [ 
+        "aaron-bond.better-comments", 
+        "christian-kohler.path-intellisense", 
+        "CoenraadS.bracket-pair-colorizer-2", 
+        "dongli.python-preview", 
+        "ecmel.vscode-html-css", 
+        "hancel.serialport-helper", 
+        "KevinRose.vsc-python-indent", 
+        "MAKinteract.micro-bit-python", 
+        "MS-CEINTL.vscode-language-pack-fr", 
+        "ms-python.devicesimulatorexpress", 
+        "ms-python.python", 
+        "ms-python.vscode-pylance", 
+        "njpwerner.autodocstring", 
+        "royaction.color-manager", 
+        "tht13.html-preview-vscode", 
+        "VisualStudioExptTeam.vscodeintellicode"
+    ]
+}
