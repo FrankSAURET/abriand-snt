@@ -1,15 +1,15 @@
 {
     "name": "abriand-snt",
-    "displayName": "abriand-snt",
-    "description": "Pack d'extensions pour l'enseignement de SNT.",
-    "version": "0.0.1",
+    "displayName": "ABriand SNT",
+    "description": "Pack d'extension  à destination des élèves de SNT du lycée Aristide Briand.",
+    "version": "0.0.3",
     "author": {
 		"name": "Frank SAURET"
 	},
     "publisher": "electropol-fr",
     "repository": {
 		"type": "git",
-		"url": "https://github.com/frank4466/abriand-snt"
+		"url": "https://github.com/FrankSAURET/abriand-snt"
 	},
     "license": "MIT",
     "engines": {
