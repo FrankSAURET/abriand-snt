@@ -2,7 +2,7 @@
     "name": "abriand-snt",
     "displayName": "ABriand SNT",
     "description": "Pack d'extension  à destination des élèves de SNT du lycée Aristide Briand.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": {
 		"name": "Frank SAURET"
 	},
@@ -35,7 +35,8 @@
         "ecmel.vscode-html-css", 
         "hancel.serialport-helper", 
         "KevinRose.vsc-python-indent", 
-        "MAKinteract.micro-bit-python", 
+        "sos82.microbit-micropython",
+        "PhonicCanine.micro-bit",
         "MS-CEINTL.vscode-language-pack-fr", 
         "ms-python.devicesimulatorexpress", 
         "ms-python.python", 

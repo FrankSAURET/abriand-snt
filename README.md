@@ -33,13 +33,13 @@ Collection  d'extension pour travailler en SNT.
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Un serveur de langage performant et riche en fonctionnalités pour Python dans VS Code
 * [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Corriger l'indentation Python.
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Génération rapide de docstring avec """
-
 ### Web
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [HTML Preview](https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode) - Prévisualiser les fichiers HTML tout en les éditant dans VSCode
 ### micro:bit
 * [Device Simulator Express](https://marketplace.visualstudio.com/items?itemName=ms-python.devicesimulatorexpress) - Permet de coder des microcontrôleurs
 * [Serial Port Helper](https://marketplace.visualstudio.com/items?itemName=hancel.serialport-helper) - Connectez n'importe quel port série
-* [micro:bit-MicroPython ](https://marketplace.visualstudio.com/items?itemName=MAKinteract.micro-bit-python) - un environnement de développement autonome pour développer avec MicroPython à l'aide de la plate-forme micro:bit.
+* [Microbit MicroPython Util](https://marketplace.visualstudio.com/items?itemName=sos82.microbit-micropython) - Permet d'explorer et modifier le contenu de la micro:bit.
+* [micro:bit](https://marketplace.visualstudio.com/items?itemName=PhonicCanine.micro-bit) - Support basique pour la carte microbit.
 
 
