@@ -11,7 +11,6 @@ Collection  d'extension pour travailler en SNT.
 * Facilite le codage avec :
     * Indentation automatique, 
     * Extrait de code, 
-    * Mise en évidence des paires de parenthèses, 
     * Amélioration des commentaires (voir exemples ci-dessous),
     * Aperçu de l'exécution du python.
 
@@ -20,7 +19,6 @@ Collection  d'extension pour travailler en SNT.
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - Améliorez vos commentaires de code en annotant avec des alertes, des informations, des tâches à faire et plus encore !
 
 ![Code annoté](image/better-comments.png)
-* [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) - Une extension personnalisable pour colorer les crochets et parenthèses
 * [Color Manager](https://marketplace.visualstudio.com/items?itemName=RoyAction.color-manager) - Insérer des couleurs
 ### Aide au codage
 * [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - Développement assisté par IA
@@ -35,7 +33,7 @@ Collection  d'extension pour travailler en SNT.
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Génération rapide de docstring avec """
 ### Web
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
-* [HTML Preview](https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode) - Prévisualiser les fichiers HTML tout en les éditant dans VSCode
+* [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode
 ### micro:bit
 * [Device Simulator Express](https://marketplace.visualstudio.com/items?itemName=ms-python.devicesimulatorexpress) - Permet de coder des microcontrôleurs
 * [Serial Port Helper](https://marketplace.visualstudio.com/items?itemName=hancel.serialport-helper) - Connectez n'importe quel port série
