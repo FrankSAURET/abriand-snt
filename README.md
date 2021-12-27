@@ -1,5 +1,11 @@
 # Pack d'Extension SNT
 Collection  d'extension pour travailler en SNT.
+<p align="center">
+<a href="https://github.com/FrankSAURET/abriand-snt"><img src="https://badgen.net/vs-marketplace/v/electropol-fr.abriand-snt?icon=github" alt="vs-marketplace version"></a>
+<img src="https://badgen.net/vs-marketplace/i/electropol-fr.abriand-snt" alt="vs-marketplace installs">
+<img src="https://badgen.net/vs-marketplace/d/electropol-fr.abriand-snt" alt="vs-marketplace downloads">
+<img src="https://badgen.net/vs-marketplace/rating/electropol-fr.abriand-snt" alt="vs-marketplace rating">
+</p>
 
 ![Logo](image/Abriand-SNT.png)
 
@@ -35,7 +41,6 @@ Collection  d'extension pour travailler en SNT.
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode
 ### micro:bit
-* [Device Simulator Express](https://marketplace.visualstudio.com/items?itemName=ms-python.devicesimulatorexpress) - Permet de coder des microcontrôleurs
 * [Serial Port Helper](https://marketplace.visualstudio.com/items?itemName=hancel.serialport-helper) - Connectez n'importe quel port série
 * [Microbit MicroPython Util](https://marketplace.visualstudio.com/items?itemName=sos82.microbit-micropython) - Permet d'explorer et modifier le contenu de la micro:bit.
 * [micro:bit](https://marketplace.visualstudio.com/items?itemName=PhonicCanine.micro-bit) - Support basique pour la carte microbit.

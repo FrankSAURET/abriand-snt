@@ -2,9 +2,11 @@
     "name": "abriand-snt",
     "displayName": "ABriand SNT",
     "description": "Pack d'extension  à destination des élèves de SNT du lycée Aristide Briand.",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": {
-		"name": "Frank SAURET"
+        "name": "Frank SAURET",
+        "email": "frank.sauret.prof@gmail.com",
+        "url": "http://www.electropol.fr/"
 	},
     "publisher": "electropol-fr",
     "repository": {
@@ -16,6 +18,37 @@
         "vscode": "^1.46.0"
     },
     "icon": "image/LogoAbriandSNT.png",
+    "galleryBanner": {
+        "color": "#0065FF",
+        "theme": "dark"
+    },
+    "badges": [
+        {
+            "url": "https://badgen.net/github/stars/FrankSAURET/abriand-snt?icon=github",
+            "href": "https://github.com/FrankSAURET/abriand-snt/stargazers",
+            "description": "stars"
+        },
+        {
+            "url": "https://badgen.net/github/open-issues/FrankSAURET/abriand-snt?icon=github",
+            "href": "https://github.com/FrankSAURET/abriand-snt/issues",
+            "description": "open issues"
+        },
+        {
+            "url": "https://badgen.net/github/last-commit/FrankSAURET/abriand-snt?icon=github",
+            "href": "https://github.com/FrankSAURET/abriand-snt/commits/master",
+            "description": "last commit"
+        },
+        {
+            "url": "https://badgen.net/github/forks/FrankSAURET/abriand-snt?icon=github",
+            "href": "https://marketplace.visualstudio.com/items?itemName=electropol-fr.abriand-snt&ssr=false#overview",
+            "description": "forks"
+        },
+        {
+            "url": "https://badgen.net/github/license/FrankSAURET/abriand-snt?icon=github",
+            "href": "https://marketplace.visualstudio.com/items/electropol-fr.abriand-snt/license",
+            "description": "license"
+        }
+    ],
     "keywords": [
 		"python",
 		"french",
@@ -30,15 +63,11 @@
     "extensionPack": [ 
         "aaron-bond.better-comments", 
         "christian-kohler.path-intellisense", 
-        "CoenraadS.bracket-pair-colorizer-2", 
         "dongli.python-preview", 
         "ecmel.vscode-html-css", 
         "hancel.serialport-helper", 
         "KevinRose.vsc-python-indent", 
-        "sos82.microbit-micropython",
-        "PhonicCanine.micro-bit",
         "MS-CEINTL.vscode-language-pack-fr", 
-        "ms-python.devicesimulatorexpress", 
         "ms-python.python", 
         "ms-python.vscode-pylance", 
         "njpwerner.autodocstring", 
