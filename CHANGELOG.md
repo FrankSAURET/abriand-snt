@@ -1,7 +1,7 @@
 # Change Log
 
 ## Released
-##### [0.0.6] - 27 décembre 2021
+##### [0.0.6 - 0.0.7] - 27 décembre 2021
 * Suppression de device simulator express qui ne marche plus et a été retiré par microsoft garage.
 * Suppression temporaire des outils micro:bit (construction d'une solution plus fonctionnelle et globale).
 ##### [ 0.0.5 ]
