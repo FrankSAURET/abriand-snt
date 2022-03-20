@@ -41,8 +41,7 @@ Collection  d'extension pour travailler en SNT.
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode
 ### micro:bit
-* [Serial Port Helper](https://marketplace.visualstudio.com/items?itemName=hancel.serialport-helper) - Connectez n'importe quel port série
-* [Microbit MicroPython Util](https://marketplace.visualstudio.com/items?itemName=sos82.microbit-micropython) - Permet d'explorer et modifier le contenu de la micro:bit.
-* [micro:bit](https://marketplace.visualstudio.com/items?itemName=PhonicCanine.micro-bit) - Support basique pour la carte microbit.
+* [micro-bit-fr](https://marketplace.visualstudio.com/items?itemName=electropol-fr.micro-bit-fr) - Programmer la micro:bit.
+
 
 
