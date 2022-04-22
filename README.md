@@ -41,7 +41,7 @@ Collection  d'extension pour travailler en SNT.
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode
 ### micro:bit
-* [micro-bit-fr](https://marketplace.visualstudio.com/items?itemName=electropol-fr.micro-bit-fr) - Programmer la micro:bit.
+* [micro-bit-fr](https://marketplace.visualstudio.com/items?itemName=electropol-fr.microbit-explorer) - Programmer et explorer la micro:bit.
 
 
 
