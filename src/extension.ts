@@ -4,17 +4,15 @@ import * as vscode from 'vscode';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {
+export async function activate(context: vscode.ExtensionContext) {
 
     // compléter la liste des modules à installer ci-dessous
-    const moduleAInstaller: string[] = ["pillow", "folium"];
-
+    const moduleAInstaller: string = "pillow folium";
+    
     try {
-        moduleAInstaller.forEach(async (module) => {
-            await findPipLocation();
-            let dir = "";
-            await installModule(dir, module);
-        });
+        await findPipLocation();
+        let dir = "";
+        await installModule(dir, moduleAInstaller);
     } catch (error) {
         console.log(error);
     }
