@@ -19,6 +19,7 @@ Collection  d'extension pour travailler en SNT.
     * Extrait de code, 
     * Amélioration des commentaires (voir exemples ci-dessous),
     * Aperçu de l'exécution du python.
+* Installe les librairies pythons nécessaires (Pillow).
 
 ## Extensions dans ce pack
 ### Mise en forme
@@ -33,7 +34,6 @@ Collection  d'extension pour travailler en SNT.
 ### Python
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense (Pylance), Linting, Débogage (multithread, à distance), Jupyter Notebooks, formatage de code, refactorisation, tests unitaires, etc.
 * [Python Preview](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview) - Fournir un aperçu de l'exécution de Python.
-
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Un serveur de langage performant et riche en fonctionnalités pour Python dans VS Code
 * [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Corriger l'indentation Python.
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Génération rapide de docstring avec """
@@ -41,7 +41,7 @@ Collection  d'extension pour travailler en SNT.
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode
 ### micro:bit
-* [micro-bit-fr](https://marketplace.visualstudio.com/items?itemName=electropol-fr.microbit-explorer) - Programmer et explorer la micro:bit.
+* [microbit-explorer](https://marketplace.visualstudio.com/items?itemName=electropol-fr.microbit-explorer) - Programmer et explorer la micro:bit.
 
 
 

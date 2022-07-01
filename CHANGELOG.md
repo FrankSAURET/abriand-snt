@@ -1,7 +1,11 @@
 # Change Log
 
 ## Released
-##### [0.0.7] - 20 mars 2020
+##### [0.1.0] -2 2022
+* Ajout du chargement des modules pythons.
+##### [0.0.10] - 22 avril 2022
+* Remplacement de micro-bit-fr par microbit-explorer que je développe.
+##### [0.0.7] - 20 mars 2022
 * Ajout de l'extension micro-bit-fr.
 * Suppression des autres extensions micro:bit.
 ##### [0.0.6 - 0.0.7] - 27 décembre 2021
