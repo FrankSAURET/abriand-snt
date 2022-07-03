@@ -1,7 +1,7 @@
 # Change Log
 
 ## Released
-##### [0.1.1] - 3 juillet 2022
+##### [0.1.2] - 3 juillet 2022
 * Ajout d'un numéro de version et d'une commande configurer.
 ##### [0.1.0] - 1 juillet 2022
 * Ajout du chargement des modules pythons.

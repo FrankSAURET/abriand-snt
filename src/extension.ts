@@ -14,7 +14,7 @@ export async function activate(context: vscode.ExtensionContext) {
     }
     //§ Changer ici le numéro de version qui demande une reconfiguration
     if (semver.gt("0.1.0", numVersionPre)) {
-        vscode.window.showInformationMessage(`Vous pourrez refaire la configuration en exécutant la commande « abriand-snt : configurer » `);
+        vscode.window.showInformationMessage(`Vous pourrez refaire la configuration en exécutant la commande « ABriand SNT : configurer » `);
         vscode.commands.executeCommand('abriand-snt.configurer');
     }
 
