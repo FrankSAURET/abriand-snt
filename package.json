@@ -2,7 +2,7 @@
     "name": "abriand-snt",
     "displayName": "ABriand SNT",
     "description": "Pack d'extension à destination des élèves de SNT du lycée Aristide Briand.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": {
         "name": "Frank SAURET",
         "email": "frank.sauret.prof@gmail.com",
@@ -81,6 +81,27 @@
         "onStartupFinished"
     ],
     "main": "./out/extension.js",
+    "contributes": {
+        "configuration": [
+            {
+                "title": "ABriand SNT",
+                "properties": {
+                    "ABriandSNT.VersionNb": {
+                        "type": "string",
+                        "default": null,
+                        "description": "Donne le numéro de la version de l'extension lors du dernier lancement de la commande « abriand-snt : configurer ». Ne pas le changer manuellement."
+                    }
+                }
+            }
+        ],
+        "commands": [
+            {
+                "command": "abriand-snt.configurer",
+                "category": "ABriand SNT ",
+                "title": "Configurer vs code pour le travail en SNT."
+            }
+        ]
+    },
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
