@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.2.0] - 6 juillet 2022
+* Version alpha prête pour 2022-2023
 ##### [0.1.2] - 3 juillet 2022
 * Ajout d'un numéro de version et d'une commande configurer.
 ##### [0.1.0] - 1 juillet 2022

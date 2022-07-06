@@ -20,20 +20,32 @@ export async function activate(context: vscode.ExtensionContext) {
 
     let disposable = vscode.commands.registerCommand('abriand-snt.configurer', async () => {
         //#region Installation des modules python
-        // compléter la liste des modules à installer ci-dessous
+        // compléter la liste des modules (séparés par une espace) à installer ci-dessous.
         const moduleAInstaller: string = "pillow folium";
-        let retourInstallation:string|undefined="";
-        try {
-            await findPipLocation();
-            let dir = "";
-            retourInstallation="\r\n"+await installModule(dir, moduleAInstaller);
-        } catch (error) {
-            console.log(error);
-        }
+        let retourInstallation: string | undefined = "";
+        let daccord = 'Ok';
+        await vscode.window.showInformationMessage(`Installation des modules python.
+			Attention cette opération peut-être longue (plusieurs minutes). 
+			Attendez le message de fin (en bas à droite) pour continuer. `, { modal: true }, daccord)
+            .then(async selection => {
+                if (selection === daccord) {
+                    
+                    try {
+                        await findPipLocation();
+                        let dir = "";
+                        retourInstallation = await installModule(dir, moduleAInstaller);
+                    } catch (error) {
+                        console.log(error);
+                    }
+                    finally {
+                        let numVersionActu = vscode.extensions.getExtension("electropol-fr.abriand-snt")?.packageJSON["version"];
+                        vscode.workspace.getConfiguration("ABriandSNT").update("VersionNb", numVersionActu, vscode.ConfigurationTarget.Global);
+
+                    }
+                }
+            });
         //#endregion
-        let numVersionActu = vscode.extensions.getExtension("electropol-fr.abriand-snt")?.packageJSON["version"];
-        vscode.workspace.getConfiguration("ABriandSNT").update("VersionNb", numVersionActu, vscode.ConfigurationTarget.Global);
-        vscode.window.showInformationMessage(`« abriand-snt » est maintenant configuré. ${retourInstallation} `);
+        await vscode.window.showInformationMessage(`« abriand-snt » est maintenant configuré.  ${retourInstallation}`);
     });
     context.subscriptions.push(disposable);
 }
@@ -73,28 +85,33 @@ async function findPipLocation() {
 }
 async function installModule(target: string, module: string) {
     // Installe un module avec pip et retourne le message post installation
+    module=module.trim();
     const { spawn } = require('child_process');
     const args = "pip install " + target + " " + module;
     const child = spawn("powershell.exe", [args]);
+    let nomModules = module.replace(/\s/g, ", ");//remplace les espaces par des virgules
+    nomModules = nomModules.replace(/\,(?=[^,]*$)/, " et");//remplace la dernière virgule par « et»
 
     try {
-        let data = "";
+        let data: string = "";
         for await (const chunk of child.stdout) {
             console.log('stdout: ' + chunk);
-            data += chunk;
-            console.log(`Module ${module} succesfully installed,${module}`);
+            //data += chunk;
+            data = `Les modules Python ; ${nomModules} ; ont été installés.`;
+            //console.log(`Module ${module} succesfully installed,${module}`);
         }
         let error = "";
         for await (const chunk of child.stderr) {
             console.error('stderr: ' + chunk);
             error += chunk;
+            data = `Erreur lors de l'installation d'au moins un des modules : ${nomModules}.`;
             vscode.window.showErrorMessage(error);
         }
         const exitCode = await new Promise((resolve, reject) => {
             child.on('close', resolve);
         });
         if (exitCode) {
-            throw new Error(`subprocess error exit ${exitCode}, ${error}`);
+            throw new Error(`Erreur : ${exitCode}, ${error}`);
         }
         return data;
     } catch (error) {
