@@ -2,7 +2,7 @@
     "name": "abriand-snt",
     "displayName": "ABriand SNT",
     "description": "Pack d'extension à destination des élèves de SNT du lycée Aristide Briand.",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "author": {
         "name": "Frank SAURET",
         "email": "frank.sauret.prof@gmail.com",
@@ -65,7 +65,6 @@
     "extensionPack": [
         "aaron-bond.better-comments",
         "christian-kohler.path-intellisense",
-        "dongli.python-preview",
         "ecmel.vscode-html-css",
         "KevinRose.vsc-python-indent",
         "MS-CEINTL.vscode-language-pack-fr",
@@ -75,7 +74,8 @@
         "royaction.color-manager",
         "VisualStudioExptTeam.vscodeintellicode",
         "ms-vscode.live-server",
-        "electropol-fr.microbit-explorer"
+        "electropol-fr.microbit-explorer",
+        "intellsmi.comment-translate"
     ],
     "activationEvents": [
         "onStartupFinished"
