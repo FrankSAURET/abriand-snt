@@ -1,6 +1,9 @@
 # Change Log
 
 ## Released
+##### [0.3.0] - 28 août 2024
+* Version alpha prête pour 2024-2025.
+* Suppression de microbit explorer - L'outil microbit est tellement mieux.
 ##### [0.2.1] - 7 janvier 2023
 * Ajout de comment translate qui traduit l'aide contextuelle à la volée.
 * Suppression de Python preview non utilisé et non maintenu.
