@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.3.1] - 13 février 2026
+* Suppression d'intellicode.
 ##### [0.3.0] - 28 août 2024
 * Version alpha prête pour 2024-2025.
 * Suppression de microbit explorer - L'outil microbit est tellement mieux.
