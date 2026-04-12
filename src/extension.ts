@@ -13,7 +13,7 @@ export async function activate(context: vscode.ExtensionContext) {
         jamaisLance = true;
     }
     //§ Changer ici le numéro de version qui demande une reconfiguration
-    if (semver.gt("0.1.0", numVersionPre)) {
+    if (semver.gt("0.3.2", numVersionPre)) {
         vscode.window.showInformationMessage(`Vous pourrez refaire la configuration en exécutant la commande « ABriand SNT : configurer » `);
         vscode.commands.executeCommand('abriand-snt.configurer');
     }
@@ -31,6 +31,7 @@ export async function activate(context: vscode.ExtensionContext) {
                 if (selection === daccord) {
                     
                     try {
+                        await detectAndSetPythonPath();
                         await findPipLocation();
                         let dir = "";
                         retourInstallation = await installModule(dir, moduleAInstaller);
@@ -116,6 +117,35 @@ async function installModule(target: string, module: string) {
         return data;
     } catch (error) {
         console.log(error);
+    }
+}
+async function detectAndSetPythonPath() {
+    // Détecte le Python par défaut du système et le définit comme interpréteur VS Code
+    const { spawn } = require('child_process');
+    const child = spawn('python', ['-c', 'import sys; print(sys.executable)']);
+    try {
+        let data = "";
+        for await (const chunk of child.stdout) {
+            data += chunk;
+        }
+        let error = "";
+        for await (const chunk of child.stderr) {
+            error += chunk;
+        }
+        const exitCode = await new Promise<number>((resolve) => {
+            child.on('close', resolve);
+        });
+        if (!exitCode && data.trim()) {
+            const pythonPath = data.trim();
+            await vscode.workspace.getConfiguration("python").update(
+                "defaultInterpreterPath",
+                pythonPath,
+                vscode.ConfigurationTarget.Global
+            );
+            console.log("Python path défini sur : " + pythonPath);
+        }
+    } catch (error) {
+        console.log("Impossible de détecter Python :", error);
     }
 }
 // this method is called when your extension is deactivated

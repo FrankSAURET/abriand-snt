@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.3.2] - 12 avril 2026
+* Détection automatique du Python système (`python --version`) à l'installation, la mise à jour et la reconfiguration. Le chemin est défini comme interpréteur par défaut dans VS Code (`python.defaultInterpreterPath`).
 ##### [0.3.1] - 13 février 2026
 * Suppression d'intellicode.
 ##### [0.3.0] - 28 août 2024
