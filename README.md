@@ -26,5 +26,3 @@ Ce pack est destiné à des élèves, dont des mineurs.
 La commande « **abriand-snt : configurer** » (lancée à l'installation et à chaque mise à jour) écrit `telemetry.telemetryLevel` à `off` dans les paramètres **utilisateur** de VS Code (global, sans confirmation). Python, Pylance et Live Preview n'envoient alors plus de données d'usage ni d'erreurs à Microsoft. Pour la réactiver : Paramètres > « telemetry.telemetryLevel ».
 
 L'installation de Pillow et folium se fait avec pip après accord de l'élève : le serveur PyPI voit l'adresse IP.
-
-L'extension de traduction des commentaires a été retirée du pack, car elle envoyait le texte des commentaires à un service tiers. L'établissement doit informer les élèves (et leurs représentants légaux) de ces traitements.
