@@ -1,6 +1,14 @@
 # Change Log
 
 ## Released
+##### [2026.10.0] - 18 octobre 2026
+**Nouveauté**
+* Le README explique la confidentialité : télémétrie coupée par défaut et connexions réseau.
+
+**Modification**
+* Passage à la numérotation calver (`ANNÉE.MOIS.incrément`) (la précédente version était la 0.3.2).
+* La télémétrie de VS Code (`telemetry.telemetryLevel`) est coupée par défaut à la configuration, y compris à la mise à jour.
+* Retrait de l'extension de traduction des commentaires (`comment-translate`) : elle envoyait le texte des commentaires à un service tiers.
 ##### [0.3.2] - 12 avril 2026
 * Détection automatique du Python système (`python --version`) à l'installation, la mise à jour et la reconfiguration. Le chemin est défini comme interpréteur par défaut dans VS Code (`python.defaultInterpreterPath`).
 ##### [0.3.1] - 13 février 2026

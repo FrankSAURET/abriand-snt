@@ -13,12 +13,14 @@ export async function activate(context: vscode.ExtensionContext) {
         jamaisLance = true;
     }
     //§ Changer ici le numéro de version qui demande une reconfiguration
-    if (semver.gt("0.3.2", numVersionPre)) {
+    if (semver.gt("2026.10.0", numVersionPre)) {
         vscode.window.showInformationMessage(`Vous pourrez refaire la configuration en exécutant la commande « ABriand SNT : configurer » `);
         vscode.commands.executeCommand('abriand-snt.configurer');
     }
 
     let disposable = vscode.commands.registerCommand('abriand-snt.configurer', async () => {
+        // Télémétrie coupée par défaut (élèves, dont des mineurs) — voir « Confidentialité » dans le README
+        await vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", "off", vscode.ConfigurationTarget.Global);
         //#region Installation des modules python
         // compléter la liste des modules (séparés par une espace) à installer ci-dessous.
         const moduleAInstaller: string = "pillow folium";

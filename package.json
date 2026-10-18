@@ -2,7 +2,8 @@
     "name": "abriand-snt",
     "displayName": "ABriand SNT",
     "description": "Pack d'extension à destination des élèves de SNT du lycée Aristide Briand.",
-    "version": "0.3.2",
+    "version": "2026.10.0",
+    "buildNumber": "1",
     "author": {
         "name": "Frank SAURET",
         "email": "frank.sauret.prof@gmail.com",
@@ -72,8 +73,7 @@
         "ms-python.vscode-pylance",
         "njpwerner.autodocstring",
         "royaction.color-manager",
-        "ms-vscode.live-server",
-        "intellsmi.comment-translate"
+        "ms-vscode.live-server"
     ],
     "activationEvents": [
         "onStartupFinished"
